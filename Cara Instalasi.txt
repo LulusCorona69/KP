@@ -1,0 +1,37 @@
+UNTUK MENJALANKAN SCRIPT DI LOCALHOST
+=====================================
+
+- Disarankan memakai software XAMPP 3.2.2 / atau PHP 7.3.3
+- Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.3.2
+- Database client version: libmysql - mysqlnd 5.0.12
+- Ekstrak file siakad.zip lalu letakkan pada folder htdocs pada XAMPP anda.
+- Konfigurasi koneksi database,buka folder function dan persiksa file connect.php
+  Sesuaikan dengan nama databasenya misal "aqiqah".
+  
+	$servername	= "localhost";
+
+	$username	= "root";
+
+	$password	= "";
+
+	$database	= "siakad";
+
+ (Bila pada XAMPP anda tidak di password kosongkan saja bagian $password)
+
+- Buka http://localhost/phpmyadmin dan buat nama database "siakad".
+- Dumping atau import file siakad.sql ke MySQL phpmyadmin pada folder database/siakad.sql
+- Jalankan browser http://localhost/siakad
+- SELESAI
+
+
+UNTUK LOGIN KE APLIKASI
+============================
+-ketikan pada browser http://localhost/aqiqah/admin
+-Login:
+Administrator
+Username: admin
+password: admin
+
+Operator
+Username: operator
+password: operator
